@@ -46,42 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomDialogs.cs">
+    <Compile Include="Dialog\Dialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomDialogs.Designer.cs">
-      <DependentUpon>CustomDialogs.cs</DependentUpon>
+    <Compile Include="Dialog\Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dialogs.cs">
+    <Compile Include="Lifecycle\Lifecycle.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Dialogs.Designer.cs">
-      <DependentUpon>Dialogs.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Lifecycle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Lifecycle.Designer.cs">
+    <Compile Include="Lifecycle\Lifecycle.Designer.cs">
       <DependentUpon>Lifecycle.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuandToolbars.cs">
+    <Compile Include="MenuandToolbars\MenuandToolbars.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuandToolbars.Designer.cs">
+    <Compile Include="MenuandToolbars\MenuandToolbars.Designer.cs">
       <DependentUpon>MenuandToolbars.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserControls.cs">
+    <Compile Include="UserControls\UserControls.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UserControls.Designer.cs">
+    <Compile Include="UserControls\UserControls.Designer.cs">
       <DependentUpon>UserControls.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Dialogs.resx">
-      <DependentUpon>Dialogs.cs</DependentUpon>
+    <EmbeddedResource Include="Dialog\Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lifecycle.resx">
+    <EmbeddedResource Include="Lifecycle\Lifecycle.resx">
       <DependentUpon>Lifecycle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -93,7 +87,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="UserControls.resx">
+    <EmbeddedResource Include="UserControls\UserControls.resx">
       <DependentUpon>UserControls.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
@@ -108,6 +102,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CustomDialog\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
