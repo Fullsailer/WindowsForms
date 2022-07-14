@@ -78,6 +78,9 @@
     <Compile Include="UserControls.Designer.cs">
       <DependentUpon>UserControls.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Dialogs.resx">
+      <DependentUpon>Dialogs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Lifecycle.resx">
       <DependentUpon>Lifecycle.cs</DependentUpon>
     </EmbeddedResource>

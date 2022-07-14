@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsDemos
 {
-    partial class Lifecycle
+    partial class Dialogs
     {
         /// <summary>
         /// Required designer variable.
@@ -36,19 +36,22 @@ namespace WindowsFormsDemos
             // 
             // listBox1
             // 
+            this.listBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(25, 12);
+            this.listBox1.Location = new System.Drawing.Point(12, 12);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(763, 244);
+            this.listBox1.Size = new System.Drawing.Size(776, 260);
             this.listBox1.TabIndex = 0;
-            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 268);
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button1.Location = new System.Drawing.Point(12, 278);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(764, 46);
+            this.button1.Size = new System.Drawing.Size(776, 60);
             this.button1.TabIndex = 1;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
@@ -56,14 +59,15 @@ namespace WindowsFormsDemos
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 336);
+            this.label1.Location = new System.Drawing.Point(12, 356);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
             // 
-            // Lifecycle
+            // Dialogs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -71,9 +75,9 @@ namespace WindowsFormsDemos
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.listBox1);
-            this.Name = "Lifecycle";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Lifecycle_Load);
+            this.Name = "Dialogs";
+            this.Text = "Dialogs";
+            this.Load += new System.EventHandler(this.Dialogs_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -86,4 +90,3 @@ namespace WindowsFormsDemos
         private System.Windows.Forms.Label label1;
     }
 }
-
