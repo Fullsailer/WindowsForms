@@ -66,14 +66,7 @@ namespace WindowsFormsDemos.Dialog_2
             this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "label1";
-            //// 
-            //// MessageTextBox
-            //// 
-            //this.MessageTextBox.Location = new System.Drawing.Point(255, 273);
-            //this.MessageTextBox.Name = "MessageTextBox";
-            //this.MessageTextBox.Size = new System.Drawing.Size(527, 22);
-            //this.MessageTextBox.TabIndex = 3;
-            //this.MessageTextBox.TextChanged += new System.EventHandler(this.MessageTextBox_TextChanged);
+           
             // 
             // Dialog2
             // 
