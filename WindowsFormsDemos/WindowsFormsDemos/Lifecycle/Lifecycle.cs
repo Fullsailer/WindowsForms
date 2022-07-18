@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsDemos.CustomDialog;
 
 namespace WindowsFormsDemos
 {
@@ -33,6 +34,8 @@ namespace WindowsFormsDemos
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ConfirmDialog f = new ConfirmDialog();
+            f.ShowDialog();
             label1.Text = listBox1.Text;
         }
     }
