@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsDemos.CustomDialog
 {
-    public partial class ConfimDialog : Form
+    public partial class ConfirmDialog : Form
     {
-        public ConfimDialog()
+        public ConfirmDialog()
         {
             InitializeComponent();
         }

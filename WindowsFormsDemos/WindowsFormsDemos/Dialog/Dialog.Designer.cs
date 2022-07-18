@@ -65,8 +65,6 @@ namespace WindowsFormsDemos.Dialog
             this.label2.Size = new System.Drawing.Size(46, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "label2";
-
-           
             // 
             // Dialog
             // 
@@ -82,9 +80,6 @@ namespace WindowsFormsDemos.Dialog
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label2;

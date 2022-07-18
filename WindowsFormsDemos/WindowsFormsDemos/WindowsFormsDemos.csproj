@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CustomDialog\ConfimDialog.cs">
+    <Compile Include="CustomDialog\ConfirmDialog.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CustomDialog\ConfimDialog.Designer.cs">
-      <DependentUpon>ConfimDialog.cs</DependentUpon>
+    <Compile Include="CustomDialog\ConfirmDialog.Designer.cs">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
     </Compile>
     <Compile Include="Dialog 2\Dialog2.cs">
       <SubType>Form</SubType>
@@ -84,8 +84,8 @@
     <Compile Include="UserControls\UserControls.Designer.cs">
       <DependentUpon>UserControls.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CustomDialog\ConfimDialog.resx">
-      <DependentUpon>ConfimDialog.cs</DependentUpon>
+    <EmbeddedResource Include="CustomDialog\ConfirmDialog.resx">
+      <DependentUpon>ConfirmDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog 2\Dialog2.resx">
       <DependentUpon>Dialog2.cs</DependentUpon>
