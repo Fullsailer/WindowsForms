@@ -16,5 +16,20 @@ namespace WindowsFormsDemos
         {
             InitializeComponent();
         }
+
+        private void MenuandToolbars_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void saveasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox("You clikced New!");
+        }
     }
 }
