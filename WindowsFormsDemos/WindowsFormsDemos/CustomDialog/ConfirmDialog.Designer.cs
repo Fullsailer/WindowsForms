@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsDemos.CustomDialog
 {
-    partial class ConfimDialog
+    partial class ConfirmDialog
     {
         /// <summary>
         /// Required designer variable.
