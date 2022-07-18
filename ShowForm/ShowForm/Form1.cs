@@ -21,7 +21,7 @@ namespace ShowForm
         {
             Form2 f = new Form2();
             //f.Show(); This just shows a new form window.
-            f.ShowDialog(); // This shows a new form dialog that won't let you close it. 
+            f.ShowDialog(); // This shows a new form dialog that won't let you move between the two forms. 
         }
     }
 }
