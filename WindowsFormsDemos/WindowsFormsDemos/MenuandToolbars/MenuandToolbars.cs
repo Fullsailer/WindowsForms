@@ -29,7 +29,12 @@ namespace WindowsFormsDemos
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox("You clikced New!");
+            MessageBox("You cliked the New Button");
+        }
+
+        private void MessageBox(string v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
