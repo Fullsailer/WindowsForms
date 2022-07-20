@@ -17,6 +17,9 @@ namespace WindowsFormsDemos
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new ShowForm.Form1());
+
+            //Application.Run(new InputBackgrounFormColorChange.InputBackgroundColorChange());
+
         }
     }
 }
