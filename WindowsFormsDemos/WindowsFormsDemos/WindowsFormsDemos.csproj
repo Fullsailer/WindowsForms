@@ -64,6 +64,12 @@
     <Compile Include="Dialog\Dialog.Designer.cs">
       <DependentUpon>Dialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="InputBackgrounFormColorChange\InputBackgroundColorChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputBackgrounFormColorChange\InputBackgroundColorChange.Designer.cs">
+      <DependentUpon>InputBackgroundColorChange.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lifecycle\Lifecycle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialog\Dialog.resx">
       <DependentUpon>Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputBackgrounFormColorChange\InputBackgroundColorChange.resx">
+      <DependentUpon>InputBackgroundColorChange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Lifecycle\Lifecycle.resx">
       <DependentUpon>Lifecycle.cs</DependentUpon>
