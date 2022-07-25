@@ -29,24 +29,25 @@ namespace MDI
         /// </summary>
         private void InitializeComponent()
         {
-            this.DocumentTextBox = new System.Windows.Forms.RichTextBox();
+            this.documentTextBox = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
-            // DocumentTextBox
+            // documentTextBox
             // 
-            this.DocumentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DocumentTextBox.Location = new System.Drawing.Point(0, 0);
-            this.DocumentTextBox.Name = "DocumentTextBox";
-            this.DocumentTextBox.Size = new System.Drawing.Size(800, 450);
-            this.DocumentTextBox.TabIndex = 0;
-            this.DocumentTextBox.Text = "";
+            this.documentTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.documentTextBox.Location = new System.Drawing.Point(0, 0);
+            this.documentTextBox.Name = "documentTextBox";
+            this.documentTextBox.Size = new System.Drawing.Size(800, 450);
+            this.documentTextBox.TabIndex = 0;
+            this.documentTextBox.Text = "";
+            this.documentTextBox.TextChanged += new System.EventHandler(this.documentTextBox_TextChanged);
             // 
             // ChildForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.DocumentTextBox);
+            this.Controls.Add(this.documentTextBox);
             this.Name = "ChildForm";
             this.Text = "New Document";
             this.ResumeLayout(false);
@@ -55,6 +56,6 @@ namespace MDI
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox DocumentTextBox;
+        internal System.Windows.Forms.RichTextBox documentTextBox;
     }
 }

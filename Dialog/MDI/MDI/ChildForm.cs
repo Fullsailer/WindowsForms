@@ -16,5 +16,10 @@ namespace MDI
         {
             InitializeComponent();
         }
+
+        private void documentTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
