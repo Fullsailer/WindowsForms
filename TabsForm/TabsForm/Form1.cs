@@ -44,18 +44,46 @@ namespace TabsForm
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedTab == tabPage1)
-            {
-                tabPage1.BackColor = Color.Green;
-            }
-            else if (tabControl1.SelectedTab == tabPage2)
-            {
-                tabPage2.BackColor = Color.Yellow;
-            }
-            else if (tabControl1.SelectedTab == tabPage3)
-            {
-                tabPage3.BackColor = Color.Blue;
+            //if (tabControl1.SelectedTab == tabPage1)
+            //{
+            //    tabPage1.BackColor = Color.Green;
+            //}
+            //else if (tabControl1.SelectedTab == tabPage2)
+            //{
+            //    tabPage2.BackColor = Color.Yellow;
+            //}
+            //else if (tabControl1.SelectedTab == tabPage3)
+            //{
+            //    tabPage3.BackColor = Color.Blue;
+            //}
+            //else if (tabControl1.SelectedTab == tabPage4)
+            //{
+            //    tabPage4.BackColor = Color.Red;
+            //    numericUpDown1.Value = 5;
+            //    Input1CurrentValueLabel.Text = "Current Value :" + numericUpDown1.Value;
+            //}
+
+            
+                //Try to write this as a switch case.It currently doesn't work.
+                int tabindex = numberGenerator.Next(1,4);
+                switch (tabindex)
+
+                {
+
+                    case 1:
+                        {
+                            tabPage1.BackColor = Color.Green;
+                            break;
+                        }
+                    case 2:
+                        {
+                            tabPage2.BackColor = Color.Yellow;
+                            break;
+                        }
+                }
             }
         }
+
     }
 }
+
