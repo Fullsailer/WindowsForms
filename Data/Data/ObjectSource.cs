@@ -108,22 +108,22 @@ namespace Data
             return _categories;
         }
 
-        public IList<Product> GetProducts(int categoryId)
-        {
-            var result = from p in _products
-                         where p.CategoryId == categoryId
-                         select p;
-            return result.ToList();
-        }
+        //public IList<Product> GetProducts(int categoryId)
+        //{
+        //    var result = from p in _products
+        //                 where p.CategoryId == categoryId
+        //                 select p;
+        //    return result.ToList();
+        //}
 
-        public void DeleteProduct(Product product)
-        {
-            _products.Remove(product);
-        }
+        //public void DeleteProduct(Product product)
+        //{
+        //    _products.Remove(product);
+        //}
 
-        public void AddProduct(Product product)
-        {
-            _products.Add(product);
-        }
+        //public void AddProduct(Product product)
+        //{
+        //    _products.Add(product);
+        //}
     }
 }
