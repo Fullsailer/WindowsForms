@@ -34,6 +34,11 @@ namespace Data
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.ProductsDataGridView = new System.Windows.Forms.DataGridView();
+            this.CategoryToolStripComboBox = new System.Windows.Forms.ComboBox();
+            this.ProductsListBox = new System.Windows.Forms.ListBox();
+            this.NameTextBox = new System.Windows.Forms.TextBox();
+            this.PriceTextBox = new System.Windows.Forms.TextBox();
+            this.StockTextBox = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).BeginInit();
@@ -61,6 +66,11 @@ namespace Data
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.StockTextBox);
+            this.tabPage1.Controls.Add(this.PriceTextBox);
+            this.tabPage1.Controls.Add(this.NameTextBox);
+            this.tabPage1.Controls.Add(this.ProductsListBox);
+            this.tabPage1.Controls.Add(this.CategoryToolStripComboBox);
             this.tabPage1.Controls.Add(this.ProductsDataGridView);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
@@ -91,6 +101,46 @@ namespace Data
             this.ProductsDataGridView.Size = new System.Drawing.Size(891, 528);
             this.ProductsDataGridView.TabIndex = 0;
             // 
+            // CategoryToolStripComboBox
+            // 
+            this.CategoryToolStripComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CategoryToolStripComboBox.FormattingEnabled = true;
+            this.CategoryToolStripComboBox.Location = new System.Drawing.Point(19, 16);
+            this.CategoryToolStripComboBox.Name = "CategoryToolStripComboBox";
+            this.CategoryToolStripComboBox.Size = new System.Drawing.Size(249, 24);
+            this.CategoryToolStripComboBox.TabIndex = 1;
+            this.CategoryToolStripComboBox.SelectedIndexChanged += new System.EventHandler(this.CategoryToolStripComboBox_SelectedIndexChanged);
+            // 
+            // ProductsListBox
+            // 
+            this.ProductsListBox.FormattingEnabled = true;
+            this.ProductsListBox.ItemHeight = 16;
+            this.ProductsListBox.Location = new System.Drawing.Point(19, 52);
+            this.ProductsListBox.Name = "ProductsListBox";
+            this.ProductsListBox.Size = new System.Drawing.Size(248, 452);
+            this.ProductsListBox.TabIndex = 2;
+            // 
+            // NameTextBox
+            // 
+            this.NameTextBox.Location = new System.Drawing.Point(295, 52);
+            this.NameTextBox.Name = "NameTextBox";
+            this.NameTextBox.Size = new System.Drawing.Size(198, 22);
+            this.NameTextBox.TabIndex = 3;
+            // 
+            // PriceTextBox
+            // 
+            this.PriceTextBox.Location = new System.Drawing.Point(295, 95);
+            this.PriceTextBox.Name = "PriceTextBox";
+            this.PriceTextBox.Size = new System.Drawing.Size(198, 22);
+            this.PriceTextBox.TabIndex = 4;
+            // 
+            // StockTextBox
+            // 
+            this.StockTextBox.Location = new System.Drawing.Point(295, 138);
+            this.StockTextBox.Name = "StockTextBox";
+            this.StockTextBox.Size = new System.Drawing.Size(198, 22);
+            this.StockTextBox.TabIndex = 5;
+            // 
             // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -100,8 +150,10 @@ namespace Data
             this.Controls.Add(this.toolStrip1);
             this.Name = "DataForm";
             this.Text = "Data Binding";
+            this.Load += new System.EventHandler(this.DataForm_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,6 +167,11 @@ namespace Data
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView ProductsDataGridView;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.ComboBox CategoryToolStripComboBox;
+        private System.Windows.Forms.ListBox ProductsListBox;
+        private System.Windows.Forms.TextBox StockTextBox;
+        private System.Windows.Forms.TextBox PriceTextBox;
+        private System.Windows.Forms.TextBox NameTextBox;
     }
 }
 
