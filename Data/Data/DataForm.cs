@@ -34,11 +34,11 @@ namespace Data
             ProductsListBox.DisplayMember = "ProductName";
 
             NameTextBox.DataBindings.Add("Text", _productsBindingSource, "ProductName");
-            //QuantityTextBox.DataBindings.Add("Text", _productsBindingSource, "QuantityPerUnit");
+            QuantityTextBox.DataBindings.Add("Text", _productsBindingSource, "QuantityPerUnit");
             PriceTextBox.DataBindings.Add("Text", _productsBindingSource, "UnitPrice");
             StockTextBox.DataBindings.Add("Text", _productsBindingSource, "UnitsInStock");
-            //OrderTextBox.DataBindings.Add("Text", _productsBindingSource, "UnitsOnOrder");
-            //DiscontinuedCheckBox.DataBindings.Add("Checked", _productsBindingSource, "Discontinued");
+            OrderTextBox.DataBindings.Add("Text", _productsBindingSource, "UnitsOnOrder");
+            DiscontinuedCheckBox.DataBindings.Add("Checked", _productsBindingSource, "Discontinued");
         }
 
         private void CategoryToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
