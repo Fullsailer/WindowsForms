@@ -46,5 +46,25 @@ namespace Data
             var catId = Convert.ToInt32(CategoryToolStripComboBox.SelectedValue);
             _productsBindingSource.DataSource = _source.GetProducts(catId);
         }
+
+        private void AddToolStripButton_Click(object sender, EventArgs e)
+        {
+            var category = (Category)CategoryToolStripComboBox.SelectedItem;
+            AddProductForm form = new AddProductForm(category);
+            var result = form.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                //_source.AddProduct(form.Product)
+                _productsBindingSource.Add(form.Product);
+            }
+        }
+
+        private void DeleteToolStripButton_Click(object sender, EventArgs e)
+        {
+            var product = (Product)ProductsListBox.SelectedItem;
+            //_source.DeletProduct(product)
+            _productsBindingSource.Remove(product);
+        }
     }
 }
