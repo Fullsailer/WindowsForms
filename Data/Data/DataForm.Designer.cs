@@ -35,8 +35,8 @@ namespace Data
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripComboBox2 = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.BackToolStripButton = new System.Windows.Forms.ToolStripButton();
+            this.ForwardToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.AddToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.DeleteToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -73,8 +73,8 @@ namespace Data
             this.toolStripSeparator2,
             this.toolStripComboBox2,
             this.toolStripSeparator4,
-            this.toolStripButton4,
-            this.toolStripButton3,
+            this.BackToolStripButton,
+            this.ForwardToolStripButton,
             this.toolStripSeparator3,
             this.AddToolStripButton,
             this.DeleteToolStripButton,
@@ -82,7 +82,7 @@ namespace Data
             this.SaveToolStripButton});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(724, 39);
+            this.toolStrip1.Size = new System.Drawing.Size(877, 28);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -90,49 +90,51 @@ namespace Data
             // 
             this.CategoryToolStripComboBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.CategoryToolStripComboBox.Name = "CategoryToolStripComboBox";
-            this.CategoryToolStripComboBox.Size = new System.Drawing.Size(121, 39);
+            this.CategoryToolStripComboBox.Size = new System.Drawing.Size(121, 28);
             this.CategoryToolStripComboBox.Tag = "";
             this.CategoryToolStripComboBox.Text = "Category";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 39);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 28);
             // 
             // toolStripComboBox2
             // 
             this.toolStripComboBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.toolStripComboBox2.Name = "toolStripComboBox2";
-            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 39);
+            this.toolStripComboBox2.Size = new System.Drawing.Size(121, 28);
             this.toolStripComboBox2.Text = "Source:";
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 39);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 28);
             // 
-            // toolStripButton4
+            // BackToolStripButton
             // 
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(29, 36);
-            this.toolStripButton4.Text = "toolStripButton4";
+            this.BackToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.BackToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("BackToolStripButton.Image")));
+            this.BackToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.BackToolStripButton.Name = "BackToolStripButton";
+            this.BackToolStripButton.Size = new System.Drawing.Size(29, 25);
+            this.BackToolStripButton.Text = "toolStripButton4";
+            this.BackToolStripButton.Click += new System.EventHandler(this.BackToolStripButton_Click);
             // 
-            // toolStripButton3
+            // ForwardToolStripButton
             // 
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(29, 36);
-            this.toolStripButton3.Text = "toolStripButton3";
+            this.ForwardToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.ForwardToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("ForwardToolStripButton.Image")));
+            this.ForwardToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.ForwardToolStripButton.Name = "ForwardToolStripButton";
+            this.ForwardToolStripButton.Size = new System.Drawing.Size(29, 25);
+            this.ForwardToolStripButton.Text = "toolStripButton3";
+            this.ForwardToolStripButton.Click += new System.EventHandler(this.ForwardToolStripButton_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 39);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 28);
             // 
             // AddToolStripButton
             // 
@@ -140,7 +142,7 @@ namespace Data
             this.AddToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("AddToolStripButton.Image")));
             this.AddToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.AddToolStripButton.Name = "AddToolStripButton";
-            this.AddToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.AddToolStripButton.Size = new System.Drawing.Size(29, 25);
             this.AddToolStripButton.Text = "toolStripButton2";
             this.AddToolStripButton.Click += new System.EventHandler(this.AddToolStripButton_Click);
             // 
@@ -150,14 +152,14 @@ namespace Data
             this.DeleteToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("DeleteToolStripButton.Image")));
             this.DeleteToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.DeleteToolStripButton.Name = "DeleteToolStripButton";
-            this.DeleteToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.DeleteToolStripButton.Size = new System.Drawing.Size(29, 25);
             this.DeleteToolStripButton.Text = "toolStripButton1";
             this.DeleteToolStripButton.Click += new System.EventHandler(this.DeleteToolStripButton_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 39);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 28);
             // 
             // SaveToolStripButton
             // 
@@ -165,7 +167,7 @@ namespace Data
             this.SaveToolStripButton.Image = ((System.Drawing.Image)(resources.GetObject("SaveToolStripButton.Image")));
             this.SaveToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.SaveToolStripButton.Name = "SaveToolStripButton";
-            this.SaveToolStripButton.Size = new System.Drawing.Size(29, 36);
+            this.SaveToolStripButton.Size = new System.Drawing.Size(29, 25);
             this.SaveToolStripButton.Text = "toolStripButton1";
             // 
             // tabControl1
@@ -173,10 +175,10 @@ namespace Data
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 49);
+            this.tabControl1.Location = new System.Drawing.Point(0, 28);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(724, 421);
+            this.tabControl1.Size = new System.Drawing.Size(877, 569);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -198,7 +200,7 @@ namespace Data
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(716, 392);
+            this.tabPage1.Size = new System.Drawing.Size(869, 540);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Form";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -330,7 +332,7 @@ namespace Data
             this.ProductsDataGridView.Name = "ProductsDataGridView";
             this.ProductsDataGridView.RowHeadersWidth = 51;
             this.ProductsDataGridView.RowTemplate.Height = 24;
-            this.ProductsDataGridView.Size = new System.Drawing.Size(710, 386);
+            this.ProductsDataGridView.Size = new System.Drawing.Size(863, 534);
             this.ProductsDataGridView.TabIndex = 0;
             // 
             // tabPage2
@@ -338,7 +340,7 @@ namespace Data
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(897, 510);
+            this.tabPage2.Size = new System.Drawing.Size(869, 540);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Grid";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -347,7 +349,7 @@ namespace Data
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(579, 376);
+            this.ClientSize = new System.Drawing.Size(877, 597);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip1);
             this.Name = "DataForm";
@@ -391,8 +393,8 @@ namespace Data
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripComboBox toolStripComboBox2;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton BackToolStripButton;
+        private System.Windows.Forms.ToolStripButton ForwardToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton AddToolStripButton;
     }

@@ -25,9 +25,9 @@ namespace Data
         {
             _categoriesBindingSource.DataSource = _source.GetCategories();
 
-            CategoryToolStripComboBox.DisplayMember = "CategoryName";
-            CategoryToolStripComboBox.ValueMember = "CategoryID";
-            CategoryToolStripComboBox.DataSource = _categoriesBindingSource;
+            CategoryToolStripComboBox.ComboBox.DisplayMember = "CategoryName";
+            CategoryToolStripComboBox.ComboBox.ValueMember = "CategoryID";
+            CategoryToolStripComboBox.ComboBox.DataSource = _categoriesBindingSource;
 
             ProductsDataGridView.DataSource = _productsBindingSource;
             ProductsListBox.DataSource = _productsBindingSource;
@@ -43,7 +43,7 @@ namespace Data
 
         private void CategoryToolStripComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var catId = Convert.ToInt32(CategoryToolStripComboBox.SelectedValue);
+            var catId = Convert.ToInt32(CategoryToolStripComboBox.SelectedIndex);
             _productsBindingSource.DataSource = _source.GetProducts(catId);
         }
 
@@ -65,6 +65,16 @@ namespace Data
             var product = (Product)ProductsListBox.SelectedItem;
             //_source.DeletProduct(product)
             _productsBindingSource.Remove(product);
+        }
+
+        private void BackToolStripButton_Click(object sender, EventArgs e)
+        {
+            _productsBindingSource.MovePrevious();
+        }
+
+        private void ForwardToolStripButton_Click(object sender, EventArgs e)
+        {
+            _productsBindingSource.MoveNext();
         }
     }
 }
