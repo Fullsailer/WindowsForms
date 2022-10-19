@@ -17,8 +17,8 @@ namespace Data
         public int UnitsOnOrder { get; set; }
         public bool Discontinued { get; set; }
 
-        public Product(int id, string name, int categoryId, string unitQuant, decimal price,
-            int inStock, int onOrder, bool discontinued)
+        public Product(int id, string name, int categoryId, string unitQuant, 
+            decimal price, int inStock, int onOrder, bool discontinued)
         {
             this.ProductID = id;
             this.ProductName = name;

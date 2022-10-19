@@ -57,11 +57,12 @@ namespace Data
             this.PriceTextBox = new System.Windows.Forms.TextBox();
             this.NameTextBox = new System.Windows.Forms.TextBox();
             this.ProductsListBox = new System.Windows.Forms.ListBox();
-            this.ProductsDataGridView = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.ProductsDataGridView = new System.Windows.Forms.DataGridView();
             this.toolStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -183,6 +184,7 @@ namespace Data
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.DimGray;
             this.tabPage1.Controls.Add(this.label6);
             this.tabPage1.Controls.Add(this.label5);
             this.tabPage1.Controls.Add(this.label4);
@@ -196,14 +198,12 @@ namespace Data
             this.tabPage1.Controls.Add(this.PriceTextBox);
             this.tabPage1.Controls.Add(this.NameTextBox);
             this.tabPage1.Controls.Add(this.ProductsListBox);
-            this.tabPage1.Controls.Add(this.ProductsDataGridView);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(869, 540);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Form";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -232,7 +232,7 @@ namespace Data
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.DarkGray;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(330, 169);
+            this.label4.Location = new System.Drawing.Point(337, 124);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(137, 25);
             this.label4.TabIndex = 12;
@@ -243,7 +243,7 @@ namespace Data
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.DarkGray;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(330, 124);
+            this.label3.Location = new System.Drawing.Point(330, 77);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 25);
             this.label3.TabIndex = 11;
@@ -254,7 +254,7 @@ namespace Data
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.DarkGray;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(330, 81);
+            this.label2.Location = new System.Drawing.Point(330, 169);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(160, 25);
             this.label2.TabIndex = 10;
@@ -265,7 +265,7 @@ namespace Data
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.DarkGray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(330, 42);
+            this.label1.Location = new System.Drawing.Point(330, 38);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 25);
             this.label1.TabIndex = 9;
@@ -303,9 +303,9 @@ namespace Data
             // 
             // PriceTextBox
             // 
-            this.PriceTextBox.Location = new System.Drawing.Point(511, 81);
+            this.PriceTextBox.Location = new System.Drawing.Point(526, 81);
             this.PriceTextBox.Name = "PriceTextBox";
-            this.PriceTextBox.Size = new System.Drawing.Size(208, 22);
+            this.PriceTextBox.Size = new System.Drawing.Size(193, 22);
             this.PriceTextBox.TabIndex = 4;
             // 
             // NameTextBox
@@ -324,6 +324,17 @@ namespace Data
             this.ProductsListBox.Size = new System.Drawing.Size(248, 452);
             this.ProductsListBox.TabIndex = 2;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.ProductsDataGridView);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(869, 540);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Grid";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
             // ProductsDataGridView
             // 
             this.ProductsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -334,16 +345,6 @@ namespace Data
             this.ProductsDataGridView.RowTemplate.Height = 24;
             this.ProductsDataGridView.Size = new System.Drawing.Size(863, 534);
             this.ProductsDataGridView.TabIndex = 0;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(869, 540);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Grid";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // DataForm
             // 
@@ -360,6 +361,7 @@ namespace Data
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ProductsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -371,7 +373,6 @@ namespace Data
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.DataGridView ProductsDataGridView;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.ListBox ProductsListBox;
         private System.Windows.Forms.TextBox StockTextBox;
@@ -397,6 +398,7 @@ namespace Data
         private System.Windows.Forms.ToolStripButton ForwardToolStripButton;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton AddToolStripButton;
+        private System.Windows.Forms.DataGridView ProductsDataGridView;
     }
 }
 
